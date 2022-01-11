@@ -7,4 +7,9 @@ public class UnityInputManager : MonoBehaviour, IInput
     {
         return Input.GetAxis(axisName);
     }
+
+    public bool GetKeyDown(string keyName)
+    {
+        return Input.GetKeyDown(keyName);
+    }
 }
