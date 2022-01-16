@@ -8,9 +8,6 @@ public class PlayerController : MonoBehaviour, ICountable
     private GameObject player;
 
     [SerializeField]
-    private float speed = 5.0f;
-
-    [SerializeField]
     private ParticleSystem memoryParticle;
 
     [SerializeField]
