@@ -8,9 +8,6 @@ public class PlayerController : MonoBehaviour, ICountable
     private GameObject player;
 
     [SerializeField]
-    private float speed = 5.0f;
-
-    [SerializeField]
     private ParticleSystem memoryParticle;
 
     [SerializeField]
@@ -47,12 +44,7 @@ public class PlayerController : MonoBehaviour, ICountable
 
     void Update()
     {
-        float x = input.GetAxis("Horizontal");
-        float y = input.GetAxis("Vertical");
-        float xMovement = x * speed * time.DeltaTime;
-        float yMovement = y * speed * time.DeltaTime;
-
-        playerTransform.Translate(xMovement, yMovement, 0);
+        
 
     }
 
