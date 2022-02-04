@@ -22,6 +22,8 @@ public class PlayerMovement : MonoBehaviour
     private ITime time;
     private float turnSmoothVelocity;
     
+    private float gravity = 0f;
+    
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -39,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
     {
         float horizontal = input.GetAxis(InputConstants.HORIZONTAL);
         float vertical = input.GetAxis(InputConstants.VERTICAL);
+        
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
 
         float speed = 0;
@@ -54,5 +57,14 @@ public class PlayerMovement : MonoBehaviour
         float smoothTime = .1f;
         float speedPercent = speed / runSpeed;
         animator.SetFloat("speedPercent", speedPercent, smoothTime, time.DeltaTime);
+        ApplyGravity();
+    }
+
+    void ApplyGravity()
+    {
+        gravity -= 9.81f * Time.deltaTime;
+        Vector3 fall = new Vector3(0f, gravity, 0f);
+        controller.Move(fall);
+        if(controller.isGrounded) gravity = 0f;
     }
 }

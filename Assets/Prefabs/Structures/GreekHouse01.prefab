@@ -9,11 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5984439261837782935}
-  - component: {fileID: 4021853082126591157}
-  - component: {fileID: 4021853082126591159}
-  - component: {fileID: 4021853082126591160}
-  - component: {fileID: 4021853082126591161}
-  - component: {fileID: 4021853082126591162}
   m_Layer: 0
   m_Name: GreekHouse01
   m_TagString: Untagged
@@ -36,71 +31,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &4021853082126591157
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 479509674745636657}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 13.25, y: 4.75, z: 8.69}
-  m_Center: {x: 0.4, y: 2.45, z: -0.87}
---- !u!65 &4021853082126591159
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 479509674745636657}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.51, y: 2.92, z: 0.54}
-  m_Center: {x: 6.39, y: 1.46, z: 5.78}
---- !u!65 &4021853082126591160
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 479509674745636657}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.51, y: 2.92, z: 0.54}
-  m_Center: {x: -5.66, y: 1.46, z: 5.78}
---- !u!65 &4021853082126591161
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 479509674745636657}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.51, y: 2.92, z: 0.54}
-  m_Center: {x: -1.75, y: 1.46, z: 5.78}
---- !u!65 &4021853082126591162
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 479509674745636657}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.51, y: 2.92, z: 0.54}
-  m_Center: {x: 2.5, y: 1.46, z: 5.78}
 --- !u!1001 &4021853082477080884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -175,3 +105,41 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dd288ddb6b2cc4631ae7126eb5f12ea0, type: 3}
   m_PrefabInstance: {fileID: 4021853082477080884}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1985130505285564047 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6026687404146079813, guid: dd288ddb6b2cc4631ae7126eb5f12ea0, type: 3}
+  m_PrefabInstance: {fileID: 4021853082477080884}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3185139121851219568 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2009622714024660804, guid: dd288ddb6b2cc4631ae7126eb5f12ea0, type: 3}
+  m_PrefabInstance: {fileID: 4021853082477080884}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2022945895026038874
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985130505285564047}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3841552254772504238, guid: dd288ddb6b2cc4631ae7126eb5f12ea0, type: 3}
+--- !u!64 &8123271595683835377
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3185139121851219568}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5316518736348317505, guid: dd288ddb6b2cc4631ae7126eb5f12ea0, type: 3}
